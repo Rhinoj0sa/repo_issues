@@ -21,29 +21,29 @@ body:
       label: Entidades
       description: Entidades impactadas por el cambio
       options:
-        label: account
-        label: bankwithdrawals
-        label: bureaus
-        label: ccardaggpercat
-        label: contactcollection
-        label: coronavaucher
-        label: creditcard
-        label: credits
-        label: devices
-        label: flags
-        label: funding
-        label: merchantsbehavior
-        label: names
-        label: navigation
-        label: notifications
-        label: payments
-        label: prepaid
-        label: sellerclassification
-        label: sellers
-        label: shipments
-        label: sociodemographic
-        label: userpix
-        label: Nueva Entidad
+        - label: account
+        - label: bankwithdrawals
+        - label: bureaus
+        - label: ccardaggpercat
+        - label: contactcollection
+        - label: coronavaucher
+        - label: creditcard
+        - label: credits
+        - label: devices
+        - label: flags
+        - label: funding
+        - label: merchantsbehavior
+        - label: names
+        - label: navigation
+        - label: notifications
+        - label: payments
+        - label: prepaid
+        - label: sellerclassification
+        - label: sellers
+        - label: shipments
+        - label: sociodemographic
+        - label: userpix
+        - label: Nueva Entidad
     validations:
       required: true
   - type: textarea
