@@ -1,0 +1,65 @@
+name: Request Optimization
+description: Request Optimization
+title: "[Request Optimization]: "
+labels: ["Request Optimization"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Formato para optimizar Entidades en Feature Store. A la brevedad estaremos revisando la solicitud, en caso de necesitar podes cantactarnos por medio del channel de slack #help-feature-store!
+  - type: input
+    id: contact
+    attributes:
+      label: Email Contacto
+      description: Email del team o responsable, para poder contactar.
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: checkboxes
+    id: entities
+    attributes:
+      label: Entidades
+      description: Entidades impactadas por la optimización
+      options:
+        - label: account
+        - label: bankwithdrawals
+        - label: bureaus
+        - label: ccardaggpercat
+        - label: contactcollection
+        - label: coronavaucher
+        - label: creditcard
+        - label: credits
+        - label: devices
+        - label: flags
+        - label: funding
+        - label: merchantsbehavior
+        - label: names
+        - label: navigation
+        - label: notifications
+        - label: payments
+        - label: prepaid
+        - label: sellerclassification
+        - label: sellers
+        - label: shipments
+        - label: sociodemographic
+        - label: userpix
+        - label: Universo
+    validations:
+      required: true
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción
+      description: Breve descripción del cambio (archivos, entidades, etc.)
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: motivo
+    attributes:
+      label: Motivo
+      description: Breve descripción del motivo del cambio.
+      render: shell
+    validations:
+      required: true
+      
