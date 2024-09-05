@@ -1,5 +1,4 @@
 name: Request Update Entity
-about: Formato para requerir un cambio de en una entidad de Feature Store.
 description: Request Update Entity
 title: "[Request Update Entity]:"
 labels: ["Request Update Entity"]
@@ -16,47 +15,35 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: true
-  - type: dropdown
-    id: type
-    attributes:
-      label: Tipo
-      description: Tipo de cambio que da origen a la solicitud
-      options:
-        - Nueva Entidad
-        - Modificación de Entidad
-        - Optimización de Entidad
-        - Cambio de Universo
-    validations:
-      required: true
-  - type: dropdown
+  - type: checkboxes
     id: entities
     attributes:
       label: Entidades
       description: Entidades impactadas por el cambio
       options:
-        - account
-        - bankwithdrawals
-        - bureaus
-        - ccardaggpercat
-        - contactcollection
-        - coronavaucher
-        - creditcard
-        - credits
-        - devices
-        - flags
-        - funding
-        - merchantsbehavior
-        - names
-        - navigation
-        - notifications
-        - payments
-        - prepaid
-        - sellerclassification
-        - sellers
-        - shipments
-        - sociodemographic
-        - userpix
-        - Nueva Entidad
+        label: account
+        label: bankwithdrawals
+        label: bureaus
+        label: ccardaggpercat
+        label: contactcollection
+        label: coronavaucher
+        label: creditcard
+        label: credits
+        label: devices
+        label: flags
+        label: funding
+        label: merchantsbehavior
+        label: names
+        label: navigation
+        label: notifications
+        label: payments
+        label: prepaid
+        label: sellerclassification
+        label: sellers
+        label: shipments
+        label: sociodemographic
+        label: userpix
+        label: Nueva Entidad
     validations:
       required: true
   - type: textarea
