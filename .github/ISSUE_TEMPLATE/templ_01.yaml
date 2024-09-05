@@ -1,0 +1,76 @@
+name: Request Update Entity
+description: Request Update Entity
+title: "[Request Update Entity]:"
+labels: ["Request Update Entity"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A la brevedad estaremos revisando la solicitud, en caso de necesitar podes cantactarnos por medio del channel de slack #help-feature-store!
+  - type: input
+    id: contact
+    attributes:
+      label: Email Contacto
+      description: Email del team o responsable, para poder contactar.
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Tipo
+      description: Tipo de cambio que da origen a la solicitud
+      options:
+        - Nueva Entidad
+        - Modificación de Entidad
+        - Optimización de Entidad
+        - Cambio de Universo
+    validations:
+      required: true
+  - type: dropdown
+    id: entities
+    attributes:
+      label: Entidades
+      description: Entidades impactadas por el cambio
+      options:
+        - account
+        - bankwithdrawals
+        - bureaus
+        - ccardaggpercat
+        - contactcollection
+        - coronavaucher
+        - creditcard
+        - credits
+        - devices
+        - flags
+        - funding
+        - merchantsbehavior
+        - names
+        - navigation
+        - notifications
+        - payments
+        - prepaid
+        - sellerclassification
+        - sellers
+        - shipments
+        - sociodemographic
+        - userpix
+        - Nueva Entidad
+    validations:
+      required: true
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción
+      description: Breve descripción del cambio (archivos, entidades, etc.)
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: motivo
+    attributes:
+      label: Motivo
+      description: Breve descripción del motivo del cambio.
+      render: shell
+    validations:
+      required: true
