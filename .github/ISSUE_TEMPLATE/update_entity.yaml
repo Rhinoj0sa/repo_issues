@@ -6,8 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        A la brevedad estaremos revisando la solicitud, en caso de necesitar podes cantactarnos por medio del channel de slack #help-feature-store!
-  - type: input
+        Formato para actualizar Entidades en Feature Store. A la brevedad estaremos revisando la solicitud, en caso de necesitar podes cantactarnos por medio del channel de slack #help-feature-store!  - type: input
     id: contact
     attributes:
       label: Email Contacto
