@@ -1,4 +1,5 @@
 name: Request Update Entity
+about: Formato para requerir un cambio de en una entidad de Feature Store.
 description: Request Update Entity
 title: "[Request Update Entity]:"
 labels: ["Request Update Entity"]
