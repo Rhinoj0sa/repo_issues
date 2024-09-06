@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Formato para optimizar Entidades en Feature Store. A la brevedad estaremos revisando la solicitud, en caso de necesitar podes cantactarnos por medio del channel de slack #help-feature-store!
+        Formato para optimizar Entidades en Feature Store. A la brevedad estaremos revisando la solicitud, en caso de necesitarlo, puede contactarnos por medio del channel de slack #help-feature-store!
   - type: input
     id: contact
     attributes:
@@ -15,35 +15,35 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: entities
     attributes:
       label: Entidades
-      description: Entidades impactadas por la optimización
+      description: Entidad impactada por la optimización
       options:
-        - label: account
-        - label: bankwithdrawals
-        - label: bureaus
-        - label: ccardaggpercat
-        - label: contactcollection
-        - label: coronavaucher
-        - label: creditcard
-        - label: credits
-        - label: devices
-        - label: flags
-        - label: funding
-        - label: merchantsbehavior
-        - label: names
-        - label: navigation
-        - label: notifications
-        - label: payments
-        - label: prepaid
-        - label: sellerclassification
-        - label: sellers
-        - label: shipments
-        - label: sociodemographic
-        - label: userpix
-        - label: Universo
+        - account
+        - bankwithdrawals
+        - bureaus
+        - ccardaggpercat
+        - contactcollection
+        - coronavaucher
+        - creditcard
+        - credits
+        - devices
+        - flags
+        - funding
+        - merchantsbehavior
+        - names
+        - navigation
+        - notifications
+        - payments
+        - prepaid
+        - sellerclassification
+        - sellers
+        - shipments
+        - sociodemographic
+        - userpix
+        - Universo
     validations:
       required: true
   - type: textarea
@@ -62,4 +62,3 @@ body:
       render: shell
     validations:
       required: true
-      
